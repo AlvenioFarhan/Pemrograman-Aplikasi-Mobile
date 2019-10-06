@@ -1,0 +1,34 @@
+<ion-header>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-back-button defaultHref="baju"></ion-back-button>
+            </ion-buttons>
+        <ion-title>List Baju Pria</ion-title>
+      </ion-toolbar>
+      </ion-header>
+      <ion-content padding center text-center>
+          <h3>Baju 1</h3>
+            <ion-item href="../tambah">
+                <img src="./assets/baju1.jpg" alt="" />
+                    <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                    Baju 1
+                    </ion-button>
+                </ion-item>
+                <hr/><hr/>
+                <h3>Baju 2</h3>
+                <ion-item >
+                    <img src="./assets/baju2.jpg" alt="" />
+                        <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                        Baju 2
+                        </ion-button>
+                    </ion-item>
+                    <hr/><hr/>
+                    <h3>Baju 3</h3>
+                    <ion-item >
+                        <img src="./assets/baju3.jpg" alt="" />
+                            <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                            Baju 3
+                            </ion-button>
+                        </ion-item>
+      </ion-content>
+     

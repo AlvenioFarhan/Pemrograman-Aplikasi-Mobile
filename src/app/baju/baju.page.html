@@ -1,0 +1,26 @@
+<ion-header>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-back-button defaultHref="product"></ion-back-button>
+            </ion-buttons>
+        <ion-title>Baju Category</ion-title>
+      </ion-toolbar>
+      </ion-header>
+      <ion-content padding center text-center>
+            <ion-item  href="../bajupria">
+                <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                    Pria
+                    </ion-button>
+                </ion-item>
+                <ion-item >
+                        <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                        Wanita
+                        </ion-button>
+                    </ion-item>
+                    <ion-item >
+                            <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                            Anak-Anak
+                            </ion-button>
+                        </ion-item>
+      </ion-content>
+     

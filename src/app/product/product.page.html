@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Daftar Produk</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content padding center text-center>
+        <ion-item href="../baju">
+            <ion-button (click)="toggleInfiniteScroll()" expand="block">
+              Baju
+            </ion-button>
+          </ion-item>
+      <ion-item href="../celana">
+            <ion-button (click)="toggleInfiniteScroll()" expand="block">
+            Celana
+            </ion-button>
+        </ion-item>
+        <ion-item >
+                <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                  Sepatu
+                </ion-button>
+        </ion-item> 
+        <ion-item >
+                <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                  Jam Tangan
+                </ion-button>
+              </ion-item>
+
+  </ion-content>
+  

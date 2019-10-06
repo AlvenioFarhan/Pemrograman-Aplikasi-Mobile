@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="bajupria"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Add Product</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content padding center text-center>
+      <img src="./assets/baju1.jpg" alt="" height='100' width='100' />
+      <p>Nama Barang : BAJU 1</p>
+      <p>Harga Satuan : Rp.60.000,-</p>
+          <ion-item>
+              <ion-label floating>
+                  Jumlah Item
+                </ion-label>
+              <ion-input type="Jumlah Item"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Tanggal Pemesanan</ion-label>
+                <ion-datetime displayFormat="MM/DD/YYYY" min="2019-03-14" max="2030-12-12" value="2002-09-23T15:03:46.789"></ion-datetime>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Pengiriman</ion-label>
+                  <ion-select placeholder="Pilih Satu">
+                    <ion-select-option value="jne">JNE</ion-select-option>
+                    <ion-select-option value="jnt">JNT</ion-select-option>
+                    <ion-select-option value="pos">POS</ion-select-option>
+                  </ion-select>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Pembayaran</ion-label>
+                    <ion-select placeholder="Pilih Satu">
+                      <ion-select-option value="id">Indomart</ion-select-option>
+                      <ion-select-option value="al">Alfamart</ion-select-option>
+                      <ion-select-option value="ebk">E-Banking</ion-select-option>
+                      <ion-select-option value="brt">Bayar Ditempat</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+
+            <ion-item href="../keranjang">
+                  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+                  Add Product
+                  </ion-button>
+              </ion-item>
+  </ion-content>
+  
